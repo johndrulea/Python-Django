@@ -1,27 +1,53 @@
 h2 {
-    text-align: right;
+    text-align: Center;
 }
 
-.image {
-    width: 300px;
-    height: 450px;
-    display: inline-block;
+.images {
+    width: wrap;
+    height: 300px;
     vertical-align: top;
     margin-right: 15px;
     margin-bottom: 20px
 }
 
-.image img{
-    width: 100%;
-    height: 100%;
+.images img{
+    height: 290px;
+    width: 200px;
+    border: 2px solid black;
 }
 
 .details {
-    display: inline-block;
-    vertical-align: top;
+    display: inline-flex;
+    flex-direction: initial;
 }
 
 .actions {
     display: inline-block;
     margin-top: 25px;
+}
+
+.watch-options {
+    align-items: center;
+
+}
+
+h3{
+    text-indent: 15px;
+    background-color: aqua;
+}
+
+.background {
+    background-color: gray;
+    padding: 5px 5px 5px 5px;
+}
+
+.button{
+    border: 2px solid white;
+
+}
+
+.mini-image {
+    height: 70px;
+    width: 50px;
+
 }

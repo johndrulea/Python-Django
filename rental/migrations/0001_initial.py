@@ -24,6 +24,8 @@ class Migration(migrations.Migration):
             fields=[
                 ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
                 ('title', models.CharField(max_length=255)),
+                ('image', models.CharField(max_length=255)),
+                ('trailer', models.CharField(max_length=255)),
                 ('release_year', models.IntegerField()),
                 ('in_stock', models.IntegerField()),
                 ('price', models.IntegerField()),

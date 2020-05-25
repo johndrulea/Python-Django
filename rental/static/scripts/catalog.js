@@ -22,11 +22,13 @@ function loadData(){
 function displayMovie(movie){
     var tr = 
     `<tr>
-        <td>${movie.id}</td>
+        <td><img src="${movie.image}" class="mini-image"></td>
+        <td>${movie.id}</>
         <td><a href="/movie/${movie.id}">${movie.title} </a></td>
         <td>${movie.release_year}</td>
         <td>${movie.price}</td>
         <td>${movie.in_stock}</td>
+
     </tr>`
 
     $(".catalog table tbody").append(tr);

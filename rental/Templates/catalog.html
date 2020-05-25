@@ -1,13 +1,17 @@
 {% extends 'layout.html' %}
 
-{% block content %}
-<h2> Out Catalog Dynamic </h2>
+{% block styles %}
+<link href="/static/styles/details.css" rel="stylesheet">
+{% endblock %}
 
+{% block content %}
+<h2> Movie Catalog </h2>
 <div class="catalog">
 
     <table class="table table-bordered table-striped">
             <thead class="thead-dark">
                 <tr>
+                    <th class='mini-image'>Pic</th>
                     <th>Id</th>
                     <th>Title</th>
                     <th>Year</th>

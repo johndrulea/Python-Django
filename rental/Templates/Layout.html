@@ -8,6 +8,8 @@
     <!-- Style -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
     {% block styles %}
 
@@ -16,10 +18,23 @@
 
 </head>
 <body>
-    <nav class="navbar navbar-dark bg-dark">
+    <nav class="navbar-expand-sm navbar-toggleable-sm navbar-light border-bottom box-shadow mb-3 bg-danger">
 
         <span class="navbar-brand mb-0 h1">
-                Vidly
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="http://127.0.0.1:8000/home">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="http://127.0.0.1:8000/catalog">Catalog <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="http://127.0.0.1:8000/about">About <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="http://127.0.0.1:8000/admin">Login <span class="sr-only">(current)</span></a>
+            </li>
+        </ul>
         </span>
         
     </nav>

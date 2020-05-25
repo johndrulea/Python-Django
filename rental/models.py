@@ -17,7 +17,9 @@ class Genre(models.Model):
 
 
 class Movie(models.Model):
-    title =models.CharField(max_length = 255) 
+    title = models.CharField(max_length = 255) 
+    image = models.CharField(max_length=500)
+    trailer = models.CharField(max_length=500)
     release_year = models.IntegerField()
     in_stock = models.IntegerField()
     price = models.IntegerField()
